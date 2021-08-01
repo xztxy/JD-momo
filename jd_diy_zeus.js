@@ -101,7 +101,7 @@ if ($.isNode()) {
   
 	$.TokenLists = []
   
-	$.innerTokenList = await getStoreTokee('http://www.z1988.com/tools/shareCodes/jd_babel_diy_zeus.php');
+	$.innerTokenList = await getStoreTokee('https://raw.githubusercontent.com/xztxy/JD-momo/main/token.txt');
 	
 	$.TokenLists.push(...$.TokenList,...$.innerTokenList);
 
