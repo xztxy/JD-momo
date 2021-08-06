@@ -4,7 +4,7 @@
 
 jd_babel_diy_zeus
 */
-const $ = new Env('店铺签到');
+const $ = new Env('店铺自定义签到');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
