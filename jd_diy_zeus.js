@@ -4,7 +4,7 @@
 
 jd_babel_diy_zeus
 */
-const $ = new Env('店铺自定义签到');
+const $ = new Env('店铺签到');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -19,7 +19,8 @@ let vender=''
 let num=0
 let shopname=''
 
-const token= [
+const token=[
+
 '020E4A5B75AE493CDF3020628CA72FDE',//3天，10豆；5天，20豆；7天，35豆；
 'ACD7EB42FB65AF1A447AEB329235DE04',//每日，3豆；15天，100豆；
 '5BB2C6C6332AD842011240152F7550EB',//每日，6豆；7天，100豆；
@@ -36,6 +37,7 @@ const token= [
 '513B43DB672C8C7B0D975DB75328A131',//每日，5豆；26天，88豆；
 '9BABD41E5674FD5791963D5366BEC634',//每日，1豆；5天，10豆；21天，100豆;
 'EFFD0BF4069A8B6882A55FB07ACDA60F',//10天，30豆；20天，60豆；30天，100豆;
+
 ]
 //IOS等用户直接用NobyDa的jd cookie
 
@@ -64,8 +66,8 @@ if ($.isNode()) {
   
 	$.TokenLists = []
   
-	//$.innerTokenList = await getStoreTokee('https://raw.githubusercontent.com/xztxy/JD-momo/main/token.txt');
-	$.innerTokenList = token
+        $.innerTokenList = await getStoreTokee('https://zy.kejiwanjia.com/jd_dpqiandao.php');
+        //$.innerTokenList = token
 	
 	$.TokenLists.push(...$.TokenList,...$.innerTokenList);
 
