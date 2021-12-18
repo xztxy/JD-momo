@@ -1,8 +1,8 @@
 /*
-更新日期:2021-12-09 19:15
+更新日期:2021-12-18 19:15
 
 更新日志：
-cron 0 0,21 * * * https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js
+
 */
 const $ = new Env('店铺签到');
 
